@@ -3,9 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
-vendor/
+/vendor/
 node_modules/
-output/
+/output/
 playwright-report/
 test-results/
 .DS_Store
