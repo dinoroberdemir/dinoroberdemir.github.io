@@ -11,3 +11,10 @@ You can find my [publications]({{ '/publications/' | relative_url }}),
 [projects]({{ '/projects/' | relative_url }}) and [CV]({{ '/cv/' | relative_url }}) here.
 
 You can also find me on [GitHub](https://github.com/dinoroberdemir).
+
+## Publications
+
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% for post in publications %}
+{% include archive-single.html %}
+{% endfor %}
