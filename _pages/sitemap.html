@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Sitemap"
+permalink: /sitemap/
+---
+
+<ul>
+  {% assign pages = site.html_pages | sort: 'title' %} {% for item in pages %} {% unless item.sitemap == false or item.url == page.url %}
+  <li><a href="{{ item.url | relative_url }}">{{ item.title | default: item.url }}</a></li>
+  {% endunless %} {% endfor %}
+</ul>

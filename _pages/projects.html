@@ -1,0 +1,10 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% assign entries = site.portfolio | sort: 'date' | reverse %} {% for post in entries %} {% include archive-single.html %} {% else %}
+<p>Projects will be added here.</p>
+{% endfor %}

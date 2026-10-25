@@ -1,0 +1,10 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+{% assign entries = site.teaching | sort: 'date' | reverse %} {% for post in entries %} {% include archive-single.html %} {% else %}
+<p>Teaching materials will be added here.</p>
+{% endfor %}

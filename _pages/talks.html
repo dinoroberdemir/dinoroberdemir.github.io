@@ -1,0 +1,10 @@
+---
+layout: archive
+title: "Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% assign entries = site.talks | sort: 'date' | reverse %} {% for post in entries %} {% include archive-single.html %} {% else %}
+<p>Talks will be added here.</p>
+{% endfor %}
